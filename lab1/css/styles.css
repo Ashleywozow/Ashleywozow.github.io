@@ -5,6 +5,7 @@ header, nav {
 
 /* Navigation bar */
 nav button.custom-btn {
+    font-family: "Montserrat", sans-serif;
     background-color: #000000;
     border: none;
     color: white;
@@ -89,6 +90,23 @@ ul {
     color: rgb(0, 72, 255);
 }
 
+/* Contact Me page */
+#contact-content {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#contact-content p {
+    font-size: 1.2em;
+    color: rgb(0, 72, 255);
+}
+
+#contact-content iframe {
+    background-color: white;
+    border: 5px solid #000000;
+    border-radius: 15px;
+}
 /* Footer */
 footer {
     font-size: 0.8em;
