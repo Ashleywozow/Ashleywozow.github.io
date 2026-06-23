@@ -4,28 +4,31 @@ header, nav {
 }
 
 /* Navigation bar */
-nav button {
-    padding: 15px;
-    padding-bottom: 4px;
-    font-size: 1.8em;
-    text-decoration: none;
+nav button.custom-btn {
+    background-color: #000000;
+    border: none;
     color: white;
-}
-
-nav button:hover {
-    border-bottom: 3px rgb(0, 72, 255) solid;
-    font-size: 2em;
+    padding: 15px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    cursor: pointer;
+    border-radius: 5px;
     transition: 0.7s;
 }
 
-.custom-btn.current {
+nav button.custom-btn:hover {
+    border-bottom: 3px rgb(0, 72, 255) solid;
+    font-size: 2em;
+}
+
+nav button.custom-btn.current {
     color: rgb(0, 72, 255);
     font-weight: bold;
 }
 
 /* Main Content */
-
 body {
+    font-family: "Open Sans", sans-serif;
     background-color: #8db185;
     padding: 5px;
 }
@@ -35,24 +38,17 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 /* Home page */
-button.custom-btn {
-    background-color: #000000; 
-    border: none;
-    color: white; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    font-size: 16px; 
-    border-radius: 5px; 
-    transition: background-color 0.3s ease; 
-}
-h3{
+h3 {
     font-size: 24px;
-    color:rgb(0, 72, 255);
+    color: rgb(0, 72, 255);
 }
+
 .img {
     border-radius: 25px;
 }
+
 /* About Me page */
 table {
     margin: 0 auto;
@@ -92,11 +88,13 @@ ul {
 .hobby {
     color: rgb(0, 72, 255);
 }
+
 /* Footer */
 footer {
     font-size: 0.8em;
     color: rgb(137, 98, 20);
 }
+
 footer img {
     width: 100px;
 }
