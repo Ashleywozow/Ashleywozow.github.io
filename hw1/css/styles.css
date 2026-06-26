@@ -1,0 +1,82 @@
+body {
+  margin: 10px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: black;
+  padding: 10px;
+}
+
+nav button.custom-btn:hover {
+    border-bottom: 5px rgb(255, 16, 16) solid;
+    font-size: 1.2em;
+}
+
+.custom-btn {
+  background-color: #eeeeee;
+  color: black;
+  border: 2px solid gray;
+  padding: 6px 14px;
+  font-size: 18px;
+}
+
+.custom-btn.current {
+  background-color: #fea742;
+  color: black;
+  border: 2px solid gray;
+  padding: 6px 14px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Overview Page */
+
+/* Phases Page */
+details{
+    margin: 25px;
+}
+
+.planning {
+    color: red
+}
+
+.analysis {
+    color: orange
+}
+
+.design {
+    color: rgb(200, 200, 31)
+}
+
+.coding {
+    color: green
+}
+
+.testing {
+    color: rgb(125, 199, 223)
+}
+
+.deployment {
+    color: darkblue
+}
+
+.maintenance {
+    color: purple
+}
+/* Models Page */
+
+/* Benefits Page */
+
+
+
+
