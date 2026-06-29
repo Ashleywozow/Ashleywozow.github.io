@@ -1,25 +1,79 @@
-body{
-    text-align:center;
-    background-image: url("../img/numbers_bg.jpg");
+body {
+    text-align: center;
+    background-image: url("../img/number_bg.avif");
     background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
-header{
-    color:white;
-    background-color:rgba(100,100,100,.8);
-    padding:20px;
-    margin-bottom:15px;
+header {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.18);
+    padding: 25px;
+    margin: 25px auto 15px auto;
+    width: 80%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #main {
-    background-color:rgba(200,200,200,.8);
-    font-size: 1.5rem;    
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.22);
+    font-size: 1.5rem;
+    padding: 25px;
+    width: 75%;
+    margin: auto;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #feedback {
-    padding: 30px;
-    background-color: lightyellow;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.35);
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+button {
+    padding: 10px 18px;
     margin: 10px;
-    font-weight:bold;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+button:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+div#answer {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 20px auto;
+    width: 75%;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 20px rgba(148, 255, 255, 0.872);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }

@@ -16,6 +16,9 @@ function initializeGame() {
    console.log("Random number: " + randomNumber);
    attempts = 0;
 
+   //resetting the attempts left
+   document.querySelector("#attempts").textContent = 7;
+
    //hiding the Reset button
    document.querySelector("#resetBtn").style.display = "none";
 
@@ -47,18 +50,20 @@ function checkGuess() {
     console.log("Player guess: " + guess);
     if (guess < 1 || guess > 99) {
         let feedback = document.querySelector("#feedback");
-        feedback.textContent = "Enter a number between 1 and 99";
-        feedback.style.color = "red";
+        feedback.textContent = "Enter a number between 1 and 99!!";
+        feedback.style.color = "maroon";
         return;
     }
     attempts++;
     console.log("Attempts: " + attempts);
     let attemptsLeft = 7 - attempts;
     document.querySelector("#attempts").textContent = attemptsLeft;
-    feedback.style.color = "orange";
+    feedback.style.color = "pink";
+    feedback.style.fontSize = "1.5rem";
     if (guess == randomNumber) {
         feedback.textContent = "You guessed it! You Won!";
-        feedback.style.color = "darkgreen";
+        feedback.style.color = "turquoise";
+        feedback.style.fontSize = "2.0rem";
         wins += 1;
         console.log("Wins: " + wins);
         document.querySelector("#wins").textContent = wins;
@@ -67,7 +72,8 @@ function checkGuess() {
         document.querySelector("#guesses").textContent += guess + " ";
         if (attempts == 7) {
             feedback.textContent = "Sorry, you lost!";
-            feedback.style.color = "red";
+            feedback.style.color = "maroon";
+            feedback.style.fontSize = "1.8rem";
             
             losses += 1;
             console.log("Losses: " + losses);
@@ -76,6 +82,8 @@ function checkGuess() {
 
             document.querySelector("#answer").style.display = "block";
             document.querySelector("#randomNumber").textContent = randomNumber;
+            document.querySelector("#randomNumber").style.color = "hotpink";
+
 
             gameOver();
         } else if (guess > randomNumber) {
