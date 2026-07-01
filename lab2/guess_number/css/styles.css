@@ -77,3 +77,7 @@ div#answer {
     box-shadow: 0 0 20px rgba(148, 255, 255, 0.872);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+footer {
+    margin-top: 50px;
+}
