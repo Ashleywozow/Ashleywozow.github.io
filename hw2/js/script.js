@@ -1,8 +1,44 @@
-document.querySelector("button").addEventListener("click", gradeQuiz);
+// Reset scroll position to top of page on reload
+if (history.scrollRestoration) {
+    history.scrollRestoration = "manual";
+}
+
+window.addEventListener("load", function () {
+    window.scrollTo(0, 0);
+});
+
+// Timer functionality
+let timeLeft = 300;
+
+let timer = setInterval(function () {
+    timeLeft--;
+
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
+    document.querySelector("#timer").textContent = `Time Left: ${minutes}:${seconds}`;
+    document.querySelector("#timer").style.position = "sticky";
+    document.querySelector("#timer").style.top = "0";
+
+
+    if (timeLeft === 0) {
+        clearInterval(timer);
+        gradeQuiz();
+    }
+}, 1000);
+
+// Event listeners
+document.querySelector("button").addEventListener("click", gradeOrReset);
 document.querySelector("#q8").addEventListener("input", function () {
     document.querySelector("#q8Value").textContent = this.value;
 });
 
+
+// Quiz grading/form functionality
 let score = 0;
 displayQ4Choices();
 
@@ -87,6 +123,8 @@ function wrongAnswer(index) {
 }
 
 function gradeQuiz() {
+    clearInterval(timer);
+    
     document.querySelector("#validationFdbk").textContent = "";
     document.querySelector("#scoreMessage").textContent = "";
     document.querySelector("#markImg11").textContent = "";
@@ -178,7 +216,7 @@ function gradeQuiz() {
         attempts = Number(attempts);
     }
 
-    document.querySelector("#totalScore").textContent = `Total Score: ${score}`;
+    document.querySelector("#totalScore").textContent = `Total Score: ${score} pts`;
     let finalResult = document.querySelector("#finalResult");
 
     if (score > 80) {
@@ -191,9 +229,39 @@ function gradeQuiz() {
         setMarkImage(11, "tryagain.png", "Try Again");
     }
 
+    disableForm();
+
+    document.querySelector("button").textContent = "Reset Quiz";
 
     attempts++;
     document.querySelector("#totalAttempts").textContent = `Total Attempts: ${attempts}`;
     localStorage.setItem("total_attempts", attempts);
+}
+
+function resetQuiz() {
+    location.reload();
+}
+
+function gradeOrReset() {
+    if (document.querySelector("#totalScore").textContent === "") {
+        gradeQuiz();
+    } else {
+        resetQuiz();
+    }
+}
+
+function disableForm() {
+    let inputs = document.querySelectorAll("input");
+    for (let input of inputs) {
+        input.disabled = true;
+    }
+    let selects = document.querySelectorAll("select");
+    for (let select of selects) {
+        select.disabled = true;
+    }
+    let textareas = document.querySelectorAll("textarea");
+    for (let textarea of textareas) {
+        textarea.disabled = true;
+    }
 }
 
