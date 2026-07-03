@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Geography Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body class="text-center">
+    <h1 class="p-5 bg-info">US Geography Quiz</h1>
+
+    <h3><span id="markImg1"></span>What is the capital of California?</h3>
+    <input type="text" id="q1">
+    <br><br>
+    <div id="q1Feedback"></div>
+    <br><br>
+
+    <h3><span id="markImg2"></span>What is the longest river?</h3>
+    <select id="q2">
+        <option value="">Select One</option>
+        <option value="ms">Mississippi</option>
+        <option value="mo">Missouri</option>
+        <option value="co">Colorado</option>
+        <option value="de">Delaware</option>
+    </select>
+    <br><br>
+    <div id="q2Feedback"></div>
+    <br><br>
+
+    <h3><span id="markImg3"></span>What presidents are carved into Mount Rushmore?</h3>
+    <input type="checkbox" id="Jackson"> <label for="Jackson">A. Jackson</label>
+    <input type="checkbox" id="Franklin"> <label for="Franklin">B. Franklin</label>
+    <input type="checkbox" id="Jefferson"> <label for="Jefferson">T. Jefferson</label>
+    <input type="checkbox" id="Roosevelt"> <label for="Roosevelt">T. Roosevelt</label>
+    <br><br>
+    <div id="q3Feedback"></div>
+    <br><br>
+
+    <h3><span id="markImg4"></span>What is the smallest US State?</h3>
+    <div id="q4Choices"></div>
+    <br><br>
+    <div id="q4Feedback"></div>
+
+    <h3><span id="markImg5"></span>How many states are in the United States?</h3>
+    <input type="number" id="q5">
+    <br><br>
+    <div id="q5Feedback"></div>
+    <br><br>
+
+    <h3><span id="markImg6"></span>What month is Independence Day celebrated?</h3>
+    <input type="month" id="q6">
+    <br><br>
+    <div id="q6Feedback"></div>
+    <br><br>
+
+    <h3><span id="markImg7"></span>Name one state that borders California.</h3>
+    <textarea id="q7"></textarea>
+    <br><br>
+    <div id="q7Feedback"></div>
+    <br><br>
+
+    <h3><span id="markImg8"></span>How many Great Lakes are there?</h3>
+    <input type="range" id="q8" min="1" max="10" value="1">
+    <span id="q8Value">1</span>
+    <br><br>
+    <div id="q8Feedback"></div>
+    <br><br>
+
+    <h3><span id="markImg9"></span>What is the capital of Texas?</h3>
+    <input list="capitals" id="q9">
+    <datalist id="capitals">
+        <option value="Austin">
+        <option value="Dallas">
+        <option value="Houston">
+        <option value="San Antonio">
+    </datalist>
+    <br><br>
+    <div id="q9Feedback"></div>
+    <br><br>
+
+    <h3><span id="markImg10"></span>Which U.S. state is known as the Sunshine State?</h3>
+    <select id="q10">
+        <option value="">Select One</option>
+        <option value="ca">California</option>
+        <option value="fl">Florida</option>
+        <option value="hi">Hawaii</option>
+        <option value="az">Arizona</option>
+    </select>
+    <br><br>
+    <div id="q10Feedback"></div>
+    <br><br>
+
+    <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+    <button class="btn btn-outline-primary">Submit Quiz</button>
+    <h2 id="totalScore" class="text-info"></h2>
+
+    <div id="finalResult" class="mt-4 p-4">
+        <div id="markImg11"></div>
+        <h2 id="scoreMessage" class="mt-3"></h2>
+    </div>
+
+    <h3 id="totalAttempts"></h3>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
