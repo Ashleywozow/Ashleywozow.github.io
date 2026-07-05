@@ -174,7 +174,7 @@ function gradeQuiz() {
     }
 
     let q6Response = document.querySelector("#q6").value;
-    if (q6Response.endsWith("-07")) {
+    if (q6Response.endsWith("-06")) {
         rightAnswer(6);
     } else {
         wrongAnswer(6);
