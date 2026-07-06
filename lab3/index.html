@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Sign Up Page </title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <form id="signupForm" action="welcome.html">
+        <h1> Sign Up Form</h1>
+        <label> First Name:
+            <input type="text" id="fName" name="fName"><br>
+        </label>
+
+        <label>Last Name:
+            <input type="text" id="lName" name="lName"><br>
+        </label>
+
+        Gender:
+        <label><input type="radio" name="gender" value="m"> Male</label>
+        <label><input type="radio" name="gender" value="f"> Female</label><br>
+
+        <label>Zip Code:
+            <input type="text" id="zip" name="zip"><br>
+        </label>
+
+        City: <span id="city"></span><br>
+        Latitude: <span id="latitude"></span><br>
+        Longitude: <span id="longitude"></span><br>
+
+        <label>State:
+            <select id="state" name="state">
+                <option value="">Loading states...</option>
+            </select><br>
+        </label>
+
+        <label>Select a County:
+            <select id="county" name="county">
+                <option value="">Select a state first</option>
+            </select><br>
+        </label>
+
+        <label>Desired Username:
+            <input type="text" id="username" name="username">
+        </label>
+        <strong id="usernameError"></strong><br>
+
+        <label>Password:
+            <input type="password" id="password" name="password">
+        </label>
+        <strong id="suggestedPassword"></strong><br>
+
+        <label>Type Password Again:
+            <input type="password" id="passwordAgain" name="passwordAgain"><br>
+        </label>
+        <strong id="passwordError"></strong><br>
+
+        <button>Sign up!</button>
+    </form>
+    <script src="js/script.js"></script>
+
+    <footer>
+        <hr>
+        <br>
+        CST336 Internet Programming. 2026&copy; Wozow
+        <br>
+    </footer>
+</body>
+
+
+</html>
