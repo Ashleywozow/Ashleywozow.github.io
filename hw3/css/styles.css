@@ -1,0 +1,53 @@
+body {
+    background-image: url('../img/weatherbg.png');
+    background-size: cover;
+    font-family: Georgia, sans-serif;
+    text-align: center;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.51);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+    font-family: Tahoma, sans-serif
+}
+
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    size: 1em;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #20ce28;
+    front-size: 1.2em;
+    transition: background-color 0.3s;
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+
+}
