@@ -8,18 +8,41 @@
 </head>
 
 <body>
-    <form id="weatherForm">
-        <h1>Weather Information Form</h1>
+    <main class="tile-container">
 
-        <label for="cityInput">Please enter a city:</label>
-        <input type="text" id="cityInput" placeholder="Example: San Diego" required>
+        <section class="tile">
+            <form id="weatherForm">
+                <h1>Search City Weather</h1>
 
+                <p>Enter a city name to get the current weather information.</p>
 
-        <button type="submit">Submit</button>
+                <label for="cityInput">Please enter a city:</label>
+                <input type="text" id="cityInput" placeholder="Example: San Diego" required>
 
-        <p id="message"></p>
-        <section id="results"></section>
-    </form>
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="message1"></p>
+            <section id="results1"></section>
+        </section>
+
+        <section class="tile">
+            <form id="earthquakeForm">
+                <h1>Search Earthquakes</h1>
+
+                <p>Enter a minimum magnitude to get recent earthquake information.</p>
+
+                <label for="minMagnitude">Minimum magnitude:</label>
+                <input type="number" id="minMagnitude" min="1" max="10" step="0.1" placeholder="Ex: 4" required>
+
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="message2"></p>
+            <section id="results2"></section>
+        </section>
+
+    </main>
 
     <script src="js/script.js"></script>
 
