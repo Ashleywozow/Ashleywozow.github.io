@@ -67,3 +67,13 @@ footer {
     font-weight: lighter;
 }
 
+.earthquake-card {
+    background-color: rgba(252, 249, 249, 0.778);
+    display: block;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
