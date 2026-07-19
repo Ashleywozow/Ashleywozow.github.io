@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+
+<body>
+  <h1>The Solar System</h1>
+
+  <%- include('partials/nav.ejs') %>
+
+  <h2>Planet Earth</h2>
+
+  <img src="<%= planetEarth.image %>" alt="Planet Earth">
+
+  <p><%= planetEarth.description %></p>
+
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>

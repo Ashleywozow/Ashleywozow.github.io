@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+
+<body>
+  <h1>The Solar System</h1>
+
+  <%- include('partials/nav.ejs') %>
+
+  <main>
+    <h2>Planet <%= planetName %></h2>
+
+    <img
+      src="<%= planetInfo.image %>"
+      alt="Planet <%= planetName %>"
+    >
+
+    <div class="planet-info">
+      <% Object.entries(planetInfo).forEach(([property, value]) => { %>
+
+        <% if (property !== "image" && property !== "websiteLink") { %>
+          <p>
+            <strong>
+              <%= property.replace(/([A-Z])/g, " $1").replace(/^./, letter => letter.toUpperCase()) %>:
+            </strong>
+            <%= value %>
+          </p>
+        <% } %>
+
+      <% }); %>
+
+      <% if (planetInfo.websiteLink) { %>
+        <p>
+          <a href="<%= planetInfo.websiteLink %>" target="_blank">
+            Learn more about <%= planetName %>
+          </a>
+        </p>
+      <% } %>
+    </div>
+  </main>
+
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>

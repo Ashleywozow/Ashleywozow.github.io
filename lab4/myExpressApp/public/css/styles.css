@@ -1,0 +1,14 @@
+body {
+  background-color: #d9f2ff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  margin: 0 10px;
+}
+
+img {
+  max-width: 500px;
+  width: 80%;
+}
