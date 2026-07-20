@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+
+  <body>
+    <header>
+      <h1>SDLC: Software Development Life Cycle</h1>
+    </header>
+
+    <%- include("partials/nav", { currentPage: currentPage }) %>
+
+      <main>
+        <div class="overview">
+          <h2>SDLC Overview</h2>
+          <p>The Software Development Life Cycle (SDLC) is a process used by software engineers to design, develop, and
+            test high-quality software.</p>
+          <p>It provides a structured approach to managing the development of software projects from inception to
+            deployment.</p>
+          <p>SDLC has several key phases and models that guide the development process from planning to maintenance.</p>
+
+          <figure>
+            <img class="img" src="img/sdlcOverviewImg.png" alt="SDLC Overview Graphic" width="600" height="450">
+          </figure>
+
+          <h3>Key Phases of SDLC</h3>
+          <p>The SDLC consists of several phases, including:</p>
+          <ul>
+            <li>Planning</li>
+            <li>Analysis</li>
+            <li>Design</li>
+            <li>Coding</li>
+            <li>Testing</li>
+            <li>Deployment</li>
+            <li>Maintenance</li>
+          </ul>
+          <p>Each phase has specific objectives and deliverables that contribute to the overall success of the software
+            development project.</p>
+
+          <h3>SDLC Models</h3>
+          <p>There are various SDLC models that provide different approaches to software development, including:</p>
+          <ul>
+            <li>Waterfall Model</li>
+            <li>V-Model</li>
+            <li>Iterative Model</li>
+            <li>Incremental Model</li>
+            <li>Spiral Model</li>
+            <li>Agile Model</li>
+          </ul>
+          <p>Each model has its own advantages and disadvantages, and the choice of model depends on the project
+            requirements, team size, and other factors.</p>
+        </div>
+      </main>
+      
+      <%- include('partials/footer.ejs') %>
+
+  </body>
+
+</html>

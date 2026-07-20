@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+
+  <body>
+    <header>
+      <h1>SDLC: Software Development Life Cycle</h1>
+    </header>
+
+    <%- include("partials/nav", { currentPage: currentPage }) %>
+
+      <main class="simulator-layout">
+
+        <section class="simulator-main">
+          <h2>SDLC Project Simulator</h2>
+
+          <p>
+            This simulator generates a fictional software project, compares it
+            with a real GitHub repository, and recommends an SDLC approach.
+          </p>
+
+          <section class="generated-project">
+            <h3>Generated Project</h3>
+
+            <p><strong>Project Name:</strong>
+              <%= projectName %>
+            </p>
+            <p><strong>Project Type:</strong>
+              <%= projectType %>
+            </p>
+            <p><strong>Client:</strong>
+              <%= clientName %>
+            </p>
+            <p><strong>Team Size:</strong>
+              <%= teamSize %> developers
+            </p>
+            <p><strong>Requirements:</strong>
+              <%= requirements %>
+            </p>
+            <p><strong>Deadline:</strong>
+              <%= deadline %>
+            </p>
+          </section>
+
+          <section class="github-project">
+            <h3>Related Real-World Project</h3>
+
+            <% if (repository) { %>
+              <p><strong>Project:</strong>
+                <%= repositoryTitle %>
+              </p>
+              <p><strong>GitHub Repository:</strong>
+                <%= repository.full_name %>
+              </p>
+              <p><strong>Language:</strong>
+                <%= repository.language %>
+              </p>
+              <p><strong>Open Issues:</strong>
+                <%= repository.open_issues_count %>
+              </p>
+              <p><strong>Description:</strong>
+                <%= repository.description %>
+              </p>
+              <% } else { %>
+                <p>GitHub repository information is temporarily unavailable.</p>
+                <% } %>
+          </section>
+        </section>
+
+        <aside class="simulator-sidebar">
+          <h2>SDLC Results</h2>
+
+          <h3>Recommended Model</h3>
+          <p class="model-rec">
+            <%= recommendedModel %>
+          </p>
+
+          <h3>Risk Level</h3>
+          <p class="risk">
+            <%= riskLevel %>
+          </p>
+
+          <h3>Project Priority</h3>
+          <p>
+            <%= priority %>
+          </p>
+
+          <h3>Why This Model?</h3>
+          <p>
+            <%= modelExplanation %>
+          </p>
+
+          <h3>Data Sources</h3>
+          <p>Node package: @faker-js/faker</p>
+          <p>Web API: GitHub REST API</p>
+        </aside>
+
+      </main>
+
+      <%- include('partials/footer.ejs') %>
+  </body>
+
+</html>

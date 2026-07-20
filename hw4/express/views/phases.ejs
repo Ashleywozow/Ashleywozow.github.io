@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+
+  <body>
+    <header>
+      <h1>SDLC: Software Development Life Cycle</h1>
+    </header>
+
+    <%- include("partials/nav", { currentPage: currentPage }) %>
+
+      <main>
+        <div class="phases">
+          <h2>SDLC Phases</h2>
+          <p>The SDLC phases are the steps used to build software in an organized way. These phases include planning,
+            analysis, design, implementation, testing, deployment, and maintenance.</p>
+          <p>Each phase helps guide the project from the initial idea to the final product. </p>
+          <p>By following these phases, teams can reduce mistakes, manage complexity, communicate clearly, and make sure
+            the software meets user needs before and after release.</p>
+
+          <figure>
+            <img class="img" src="img/sdlcPhasesDiagram.png" alt="SDLC Phases Graphic" width="500" height="475">
+          </figure>
+
+          <h3>Key Phases of SDLC</h3>
+          <p>The SDLC consists of several phases, including:</p>
+
+          <details class="planning">
+            <summary>Planning</summary>
+            <p>Planning is where the team defines the projects' purpose, goals, timeline, budget, and resources. This
+              phase helps determine whether the project is realistic and worth completing.</p>
+          </details>
+
+          <details class="analysis">
+            <summary>Analysis</summary>
+            <p>Analysis focuses on understanding what the users and business need from the software. The team gathers
+              requirements, identifies problems, and decides what the system should be able to do.</p>
+          </details>
+
+          <details class="design">
+            <summary>Design</summary>
+            <p>Design is where the team plans how the software will look and work. This can include the system layout,
+              user interface, database structure, and overall architecture.</p>
+          </details>
+
+          <details class="coding">
+            <summary>Coding</summary>
+            <p>Coding is the phase where developers write the actual code for the software. The design is turned into a
+              working program or application.</p>
+          </details>
+
+          <details class="testing">
+            <summary>Testing</summary>
+            <p>Testing checks the software for errors, bugs, and issues before it is released. This phase helps make
+              sure the software works correctly and meets the requirements.</p>
+          </details>
+
+          <details class="deployment">
+            <summary>Deployment</summary>
+            <p>Deployment is when the finished software is released for users to access. This may involve installing the
+              software, launching it online, or making it available to the organization.</p>
+          </details>
+
+          <details class="maintenance">
+            <summary>Maintenance</summary>
+            <p>Maintenance happens after the software has been released. The team fixes bugs, updates features, improves
+              performance, and makes sure the software continues to meet user needs.</p>
+          </details>
+
+          <p>Each phase has specific objectives and deliverables that contribute to the overall success of the software
+            development project.</p>
+        </div>
+
+      </main>
+
+      <%- include('partials/footer.ejs') %>
+  </body>
+
+</html>

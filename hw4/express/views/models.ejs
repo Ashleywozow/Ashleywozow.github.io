@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+
+  <body>
+    <header>
+      <h1>SDLC: Software Development Life Cycle</h1>
+    </header>
+
+    <%- include("partials/nav", { currentPage: currentPage }) %>
+      <main>
+        <div class="models">
+          <h2>SDLC Models</h2>
+          <p>SDLC models provide different ways for teams to organize and manage the software development process.</p>
+          <p>Common models include the Waterfall Model, V-Model, Iterative Model, Incremental Model, Spiral Model, and
+            Agile Model, each with its own strengths and weaknesses.</p>
+          <p>Different models exist because projects vary in requirements, team size, risk, flexibility, and complexity,
+            so teams choose the approach that best fits the project.</p>
+          <figure>
+            <img class="img" src="img/sdlcModelCompImg.png" alt="SDLC Models Graphic" width="500" height="350">
+          </figure>
+
+          <h3>Main SDLC Models</h3>
+          <p>There are various SDLC models that provide different approaches to software development, including:</p>
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTbNVjcCFrMC27BibjMYzCaA_wQrftwryhRw0Aw_j-LbiKfG-5cfxtK952mqnFHOkXm6z_ur6zsowu5/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+            width="1000" height="450"></iframe>
+          <p>Each model has its own advantages and disadvantages, and the choice of model depends on the project
+            requirements, team size, and other factors.</p>
+        </div>
+      </main>
+
+
+      <%- include('partials/footer.ejs') %>
+  </body>
+
+</html>

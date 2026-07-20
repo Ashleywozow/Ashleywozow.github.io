@@ -1,0 +1,224 @@
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(100deg, rgb(255, 255, 255), #f9efc3, #f6d2a3, rgb(241, 162, 122));
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav button.custom-btn:hover {
+    border-bottom: 5px rgb(255, 16, 16) solid;
+    font-size: 1.2em;
+}
+
+.custom-btn {
+    background-color: #eeeeee;
+    color: black;
+    border: 2px solid gray;
+    padding: 6px 14px;
+    font-size: 18px;
+}
+
+.custom-btn.current {
+    background-color: #fea742;
+    color: black;
+    border: 2px solid gray;
+    padding: 6px 14px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.img {
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Overview Page */
+div.overview {
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 3px solid rgb(255, 0, 0);
+}
+
+/* Phases Page */
+div.phases {
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 3px solid rgb(255, 0, 0);
+}
+
+details {
+    background-color: #f8f8f8;
+    padding: 10px;
+    width: 550px;
+    border-radius: 30px;
+    border-left: 6px solid currentColor;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+details:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.planning {
+    color: red
+}
+
+.analysis {
+    color: orange
+}
+
+.design {
+    color: rgb(219, 205, 16)
+}
+
+.coding {
+    color: green
+}
+
+.testing {
+    color: rgb(125, 199, 223)
+}
+
+.deployment {
+    color: darkblue
+}
+
+.maintenance {
+    color: purple
+}
+
+/* Models Page */
+div.models {
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 3px solid rgb(255, 0, 0);
+}
+
+iframe {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Benefits Page */
+section.real-world-section {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(255, 191, 0);
+    border-radius: 20px;
+}
+
+section p {
+    margin: 15px;
+}
+
+.benefits-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.benefits-main {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 3px solid rgb(255, 0, 0);
+}
+
+.benefits-sidebar {
+    background-color: #fff8e6;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #fea742;
+    border-radius: 20px;
+    position: sticky;
+    top: 90px;
+}
+
+.benefits-sidebar h2 {
+    margin-top: 0;
+}
+
+.benefits-sidebar ul {
+    padding-left: 20px;
+}
+
+/* Simulator Page */
+
+section p {
+    margin: 15px;
+}
+
+.simulator-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.simulator-main {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 3px solid rgb(255, 0, 0);
+}
+
+.simulator-sidebar {
+    background-color: #fff8e6;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #fea742;
+    border-radius: 20px;
+    position: sticky;
+    top: 90px;
+}
+.simulator-sidebar h2 {
+    margin-top: 0;
+}
+
+.simulator-sidebar ul {
+    padding-left: 20px;
+}
+
+p.model-rec {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+p.risk {
+    color: rgb(255, 106, 0);
+    font-weight: bolder;
+}
